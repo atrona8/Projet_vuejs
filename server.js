@@ -1,4 +1,15 @@
-const { defineConfig } = require("@vue/cli-service");
-module.exports = defineConfig({
-  transpileDependencies: true,
-});
+const express = require('express')
+const serveStatic = require('serve-static')
+const path = require('path')
+
+const app = express()
+app.use('/',serveStatic(path.join(__dirname,'/dist')))
+app.get(/.*/ , function(req, res) {
+    res.sendFile(path.join(__dirname,'/dist/index.html'))
+})
+
+const port = process.env.PORT || 8090
+
+app.listen(port , ()=> {
+    console.log("Server is runiing at http://localhsot:"+port );
+})
