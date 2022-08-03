@@ -2,6 +2,9 @@
   "name": "projet-vuejs",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "v16.x"
+  },
   "scripts": {
     "serve": "node server.js",
     "build": "vue-cli-service build",
