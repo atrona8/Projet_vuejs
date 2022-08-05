@@ -4,26 +4,26 @@
       <iframe name="dummyframe" id="dummyframe" style="display: none"></iframe>
 
       <form name="myForm" target="dummyframe">
-        <h3>Sign Up</h3>
+    
         <div class="row">
           <div class="form-group col-md-5">
-            <label>Prenom</label>
+            <label>Réference</label>
             <input
-              nom="prenom"
+              nom="reference"
               type="text"
               class="form-control form-control-lg"
-              v-model="input.prenom"
+              v-model="input.reference"
               required
             />
           </div>
 
           <div class="form-group col-md-5">
-            <label>Nom</label>
+            <label>Image de l'article</label>
             <input
               nom="nom"
-              type="text"
+              type="file"
               class="form-control form-control-lg"
-              v-model="input.nom"
+              
               required
             />
           </div>

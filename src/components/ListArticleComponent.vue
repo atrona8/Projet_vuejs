@@ -1,6 +1,6 @@
 <template>
   <div class="vue-template">
-    <div class="t-3 col-md-8 mx-auto rounded bg-secondary">
+    <div class="p-5 m-4 col-md-8 mx-auto rounded bg-secondary">
       <h3>Liste des articles disponibles</h3>
 
       <ArticleComponent
@@ -52,6 +52,7 @@ export default {
         console.log(this.$connectedUser.account);
         this.$router.replace({ name: "login" });
       }
+      if (this.$connectedUser.user["category"] == 'marchand' ) this.$router.replace({ name: "articlec" });
     },
     getArticles() {
       articleController

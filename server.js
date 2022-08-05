@@ -11,5 +11,5 @@ app.get(/.*/ , function(req, res) {
 const port = process.env.PORT || 8090
 
 app.listen(port , ()=> {
-    console.log("Server is runiing at http://localhsot:"+port );
+    console.log("Server is runiing at http://localhost:"+port );
 })

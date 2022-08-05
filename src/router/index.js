@@ -18,10 +18,21 @@ const routes = [
     path: "/account-creation",
     name: "accountc",
     component: () => import("../views/accountCreation.vue"),
-  },  {
+  }, 
+  {
     path: "/articles",
     name: "articles",
     component: () => import("../views/articles.vue"),
+  },
+  {
+    path: "/articles-creation",
+    name: "articlec",
+    component: () => import("../views/articleCreation.vue"),
+  },
+  {
+    path: "/doc-api",
+    name: "docapi",
+    component: () => import("../views/documentationAPI.vue"),
   },
 ];
 

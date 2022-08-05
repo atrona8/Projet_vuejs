@@ -1,6 +1,6 @@
 <template>
-  <div class="t-3 vue-template">
-    <div class="t-3 col-md-9 mx-auto rounded bg-light">
+  <div class="vue-template">
+    <div class="mt-3 mb-3 col-md-9 mx-auto rounded bg-light">
       <div class="d-flex justify-content-around">
         <div class="t-3 col-md-5 mx-auto">
           <h3>{{ article["reference"] }}</h3>

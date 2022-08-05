@@ -5,8 +5,10 @@
   "engines": {
     "node": "16.13.1"
   },
+   
   "scripts": {
     "serve": "node server.js",
+    "serve2": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint",

@@ -89,7 +89,7 @@ export default {
                   this.$connectedUser.user["email"] +
                   " reussit!!!"
               );
-            accountController
+              accountController
                 .getOneAccount(
                   this.$axios,
                   this.$ENDPOINTS.account + this.$connectedUser.user["email"],
@@ -110,7 +110,9 @@ export default {
                     console.log(result[1]);
                   }
                 });
-              this.$router.replace({ name: "articles" });
+              if (this.$connectedUser.user["category"] == "marchand")  this.$router.push({ name: "articlec" });
+               else this.$router.push({ name: "articles" });
+              
             } else {
               alert("The email and / or password is incorrect");
             }
@@ -119,7 +121,6 @@ export default {
         console.log("A email and password must be present");
         alert("A email and password must be present");
       }
-
     },
   },
 };

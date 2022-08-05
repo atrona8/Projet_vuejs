@@ -34,7 +34,7 @@
           class="btn btn-dark btn-lg btn-block"
           v-on:click="signin()"
         >
-          Validate
+          Valider
         </button>
       </form>
     </div>

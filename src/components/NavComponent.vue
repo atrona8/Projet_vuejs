@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav" >
     <div class="container">
       <a class="navbar-brand" href="#">Money</a>
       <button
@@ -17,7 +17,7 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
 
-          <li class="nav-item"><a class="nav-link" to="/"><router-link class="nav-link pr-3" to="/">Documentation API</router-link> </a></li>
+          <li class="nav-item"><a class="nav-link" to="/"><router-link class="nav-link pr-3" to="/doc-api">Documentation API</router-link> </a></li>
           <li class="nav-item"><a class="nav-link" to="/"><router-link class="nav-link pr-3" to="/">Setting</router-link> </a></li>
           <li class="nav-item"><a class="nav-link" ><router-link class="nav-link pr-3" to="/account-creation">Account</router-link> </a></li>
            <li class="nav-item"><a class="nav-link" to="/"><router-link class="nav-link pr-3" to="/">Log In</router-link> </a></li>

@@ -1,12 +1,10 @@
-import { shallowMount } from "@vue/test-utils";
-import HelloWorld from "@/components/HelloWorld.vue";
+import { mount } from '@vue/test-utils'
+import AccountCreationComponent from "../../src/components/AccountCreationComponent.vue";
 
-describe("HelloWorld.vue", () => {
-  it("renders props.msg when passed", () => {
-    const msg = "new message";
-    const wrapper = shallowMount(HelloWorld, {
-      propsData: { msg },
-    });
-    expect(wrapper.text()).toMatch(msg);
-  });
-});
+test('renders a todo', () => {
+  const wrapper = mount(AccountCreationComponent)
+
+  const todo = wrapper.get('[data-test="todo"]')
+
+  expect(todo.text()).toBe('Account Creation')
+})
