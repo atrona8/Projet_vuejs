@@ -5,29 +5,7 @@
 
       <form name="myForm" target="dummyframe">
     
-        <div class="row">
-          <div class="form-group col-md-5">
-            <label>Réference</label>
-            <input
-              nom="reference"
-              type="text"
-              class="form-control form-control-lg"
-              v-model="input.reference"
-              required
-            />
-          </div>
 
-          <div class="form-group col-md-5">
-            <label>Image de l'article</label>
-            <input
-              nom="nom"
-              type="file"
-              class="form-control form-control-lg"
-              
-              required
-            />
-          </div>
-        </div>
         <div class="row">
           <div class="form-group col-md-5">
             <label>Email</label>

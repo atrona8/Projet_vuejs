@@ -2,7 +2,7 @@
   <div class="t-5 col-md-8 mx-auto rounded bg-light">
     <div id="login">
       <form name="myForm">
-        <h1>Login</h1>
+        <h1 data-test="todo" >Login</h1>
 
         <div class="form-group">
           <label>Email</label>
@@ -12,6 +12,7 @@
             v-model="input.email"
             placeholder="Email"
             class="form-control form-control-lg"
+            data-test="input.email"
           />
         </div>
 
@@ -23,6 +24,7 @@
             v-model="input.password"
             placeholder="Password"
             class="form-control form-control-lg"
+            data-test="input.password"
           />
         </div>
         <div class="t-5 mx-auto col-md-2">
@@ -30,6 +32,7 @@
             type="button"
             v-on:click="login()"
             class="rounded btn bg-blue btn-lg"
+            
           >
             Login
           </button>
